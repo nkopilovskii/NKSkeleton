@@ -1,0 +1,16 @@
+PODS:
+  - NKSkeleton (0.1.0)
+
+DEPENDENCIES:
+  - NKSkeleton (from `../`)
+
+EXTERNAL SOURCES:
+  NKSkeleton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NKSkeleton: 3d300b6c4afd221c0f9278b8fc916873dcec7c30
+
+PODFILE CHECKSUM: ff3dc580457810e140f59266476f5d1a0dac0b38
+
+COCOAPODS: 1.6.0.beta.1

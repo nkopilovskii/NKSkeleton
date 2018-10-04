@@ -1,0 +1,6 @@
+framework module NKSkeleton {
+  umbrella header "NKSkeleton-umbrella.h"
+
+  export *
+  module * { export * }
+}

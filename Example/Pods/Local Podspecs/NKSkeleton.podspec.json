@@ -1,0 +1,22 @@
+{
+  "name": "NKSkeleton",
+  "version": "0.1.0",
+  "summary": "A short description of NKSkeleton.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nkopilovskii/NKSkeleton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nkopilovskii": "nikolay.k@powercode.us"
+  },
+  "source": {
+    "git": "https://github.com/nkopilovskii/NKSkeleton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NKSkeleton/Classes/**/*"
+}

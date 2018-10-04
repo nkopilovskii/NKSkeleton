@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NKSkeleton_Example' do
+  pod 'NKSkeleton', :path => '../'
+
+  target 'NKSkeleton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

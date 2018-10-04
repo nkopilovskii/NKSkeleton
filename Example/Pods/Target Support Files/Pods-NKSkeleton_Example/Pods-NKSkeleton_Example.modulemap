@@ -1,0 +1,6 @@
+framework module Pods_NKSkeleton_Example {
+  umbrella header "Pods-NKSkeleton_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
