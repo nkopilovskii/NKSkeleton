@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +18,293 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBt-cT-Mam">
+                                <rect key="frame" x="16" y="52" width="382" height="150.66666666666666"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qch-wH-zBP">
+                                        <rect key="frame" x="165" y="8" width="52" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="b23-Q8-TRE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view shows a skeleton with a horizontal animated gradient." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="bl8-vH-KFj">
+                                        <rect key="frame" x="16" y="38.000000000000007" width="350" height="72.666666666666686"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhF-PK-9pP">
+                                        <rect key="frame" x="16" y="118.66666666666666" width="350" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="sDa-kd-b8K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Add skeleton "/>
+                                        <connections>
+                                            <action selector="showSkeletonOnView1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EVo-8D-W33"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZhF-PK-9pP" secondAttribute="trailing" constant="16" id="7Lm-eg-AKK"/>
+                                    <constraint firstItem="Qch-wH-zBP" firstAttribute="centerX" secondItem="aBt-cT-Mam" secondAttribute="centerX" id="ClD-YB-Tur"/>
+                                    <constraint firstAttribute="trailing" secondItem="bl8-vH-KFj" secondAttribute="trailing" constant="16" id="ETI-Ke-nms"/>
+                                    <constraint firstItem="bl8-vH-KFj" firstAttribute="leading" secondItem="aBt-cT-Mam" secondAttribute="leading" constant="16" id="L4M-Mg-TVe"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZhF-PK-9pP" secondAttribute="bottom" constant="8" id="Nrs-3I-cKX"/>
+                                    <constraint firstItem="Qch-wH-zBP" firstAttribute="top" secondItem="aBt-cT-Mam" secondAttribute="top" constant="8" id="RG0-Mb-CaZ"/>
+                                    <constraint firstItem="ZhF-PK-9pP" firstAttribute="leading" secondItem="aBt-cT-Mam" secondAttribute="leading" constant="16" id="VdT-rc-fgj"/>
+                                    <constraint firstItem="bl8-vH-KFj" firstAttribute="top" secondItem="Qch-wH-zBP" secondAttribute="bottom" constant="8" id="hbh-uW-mmM"/>
+                                    <constraint firstItem="ZhF-PK-9pP" firstAttribute="centerX" secondItem="aBt-cT-Mam" secondAttribute="centerX" id="o2d-bv-W9o"/>
+                                    <constraint firstItem="ZhF-PK-9pP" firstAttribute="top" secondItem="bl8-vH-KFj" secondAttribute="bottom" constant="8" id="ze1-XY-1mf"/>
+                                </constraints>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyL-cg-gai">
+                                <rect key="frame" x="16" y="206.66666666666663" width="382" height="151"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9a-ug-4N7">
+                                        <rect key="frame" x="163.66666666666666" y="8" width="55" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="lgu-ae-wfH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view shows a skeleton with a vertical animated gradient." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ihl-cQ-S3I">
+                                        <rect key="frame" x="16" y="38" width="350" height="73"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-6l-i15">
+                                        <rect key="frame" x="16" y="119.00000000000003" width="350" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="ALN-o1-V5J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Add skeleton "/>
+                                        <connections>
+                                            <action selector="showSkeletonOnView2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uzA-Xz-ZlS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="G9a-ug-4N7" firstAttribute="top" secondItem="gyL-cg-gai" secondAttribute="top" constant="8" id="5Sy-UD-8Q7"/>
+                                    <constraint firstAttribute="bottom" secondItem="lZU-6l-i15" secondAttribute="bottom" constant="8" id="9Ly-0o-FUf"/>
+                                    <constraint firstItem="lZU-6l-i15" firstAttribute="leading" secondItem="gyL-cg-gai" secondAttribute="leading" constant="16" id="C4C-Oo-bvh"/>
+                                    <constraint firstItem="G9a-ug-4N7" firstAttribute="centerX" secondItem="gyL-cg-gai" secondAttribute="centerX" id="FHu-qc-MYP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ihl-cQ-S3I" secondAttribute="trailing" constant="16" id="SzE-KX-JL2"/>
+                                    <constraint firstItem="lZU-6l-i15" firstAttribute="top" secondItem="Ihl-cQ-S3I" secondAttribute="bottom" constant="8" id="XWH-7D-TEn"/>
+                                    <constraint firstAttribute="trailing" secondItem="lZU-6l-i15" secondAttribute="trailing" constant="16" id="d0c-OE-E1V"/>
+                                    <constraint firstItem="Ihl-cQ-S3I" firstAttribute="top" secondItem="G9a-ug-4N7" secondAttribute="bottom" constant="8" id="gQH-Hk-uxe"/>
+                                    <constraint firstItem="lZU-6l-i15" firstAttribute="centerX" secondItem="gyL-cg-gai" secondAttribute="centerX" id="huw-Fj-QjP"/>
+                                    <constraint firstItem="Ihl-cQ-S3I" firstAttribute="leading" secondItem="gyL-cg-gai" secondAttribute="leading" constant="16" id="mJT-ga-8Mo"/>
+                                </constraints>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Mm-ZX-Lkg">
+                                <rect key="frame" x="16" y="361.66666666666669" width="382" height="150.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1O-8N-4J2">
+                                        <rect key="frame" x="163.66666666666666" y="8" width="55" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Y3O-hH-llZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view shows a skeleton with a diagonal animated gradient." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="vwu-ca-lYH">
+                                        <rect key="frame" x="16" y="38.000000000000007" width="350" height="72.666666666666686"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUX-hb-dYS">
+                                        <rect key="frame" x="16" y="118.66666666666663" width="350" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="eE6-1c-Kay"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Add skeleton "/>
+                                        <connections>
+                                            <action selector="showSkeletonOnView3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jYw-B2-aq8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EUX-hb-dYS" firstAttribute="centerX" secondItem="7Mm-ZX-Lkg" secondAttribute="centerX" id="6vA-HV-Old"/>
+                                    <constraint firstItem="vwu-ca-lYH" firstAttribute="top" secondItem="V1O-8N-4J2" secondAttribute="bottom" constant="8" id="I4d-j8-prj"/>
+                                    <constraint firstAttribute="trailing" secondItem="EUX-hb-dYS" secondAttribute="trailing" constant="16" id="OzE-oS-yfj"/>
+                                    <constraint firstAttribute="bottom" secondItem="EUX-hb-dYS" secondAttribute="bottom" constant="8" id="cW3-h9-dCT"/>
+                                    <constraint firstItem="EUX-hb-dYS" firstAttribute="leading" secondItem="7Mm-ZX-Lkg" secondAttribute="leading" constant="16" id="gDs-7D-lxy"/>
+                                    <constraint firstItem="V1O-8N-4J2" firstAttribute="top" secondItem="7Mm-ZX-Lkg" secondAttribute="top" constant="8" id="js8-7u-EAz"/>
+                                    <constraint firstItem="EUX-hb-dYS" firstAttribute="top" secondItem="vwu-ca-lYH" secondAttribute="bottom" constant="8" id="kqU-Dl-0uf"/>
+                                    <constraint firstItem="V1O-8N-4J2" firstAttribute="centerX" secondItem="7Mm-ZX-Lkg" secondAttribute="centerX" id="lE6-Qm-xJZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="vwu-ca-lYH" secondAttribute="trailing" constant="16" id="sPJ-Ai-JgA"/>
+                                    <constraint firstItem="vwu-ca-lYH" firstAttribute="leading" secondItem="7Mm-ZX-Lkg" secondAttribute="leading" constant="16" id="wkX-Q7-FYz"/>
+                                </constraints>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiY-KA-Ii1">
+                                <rect key="frame" x="16" y="516.33333333333337" width="382" height="151"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f91-mD-51Y">
+                                        <rect key="frame" x="163.66666666666666" y="8" width="55" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Laq-kv-ApJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view shows a skeleton with a radial animated gradient to bottom right corner." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="4oa-WY-Ni7">
+                                        <rect key="frame" x="16" y="38" width="350" height="73"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bq-S2-AsD">
+                                        <rect key="frame" x="16" y="119" width="350" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="8Mg-c6-tNw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Add skeleton "/>
+                                        <connections>
+                                            <action selector="showSkeletonOnView4:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1dN-o7-DxR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3Bq-S2-AsD" secondAttribute="bottom" constant="8" id="0Nd-7v-rnL"/>
+                                    <constraint firstItem="f91-mD-51Y" firstAttribute="centerX" secondItem="xiY-KA-Ii1" secondAttribute="centerX" id="604-Tr-Byk"/>
+                                    <constraint firstItem="3Bq-S2-AsD" firstAttribute="leading" secondItem="xiY-KA-Ii1" secondAttribute="leading" constant="16" id="8wR-QL-xRa"/>
+                                    <constraint firstItem="f91-mD-51Y" firstAttribute="top" secondItem="xiY-KA-Ii1" secondAttribute="top" constant="8" id="H1d-Dn-6as"/>
+                                    <constraint firstAttribute="trailing" secondItem="4oa-WY-Ni7" secondAttribute="trailing" constant="16" id="Kcg-mY-uqI"/>
+                                    <constraint firstItem="3Bq-S2-AsD" firstAttribute="centerX" secondItem="xiY-KA-Ii1" secondAttribute="centerX" id="UlB-3X-JhS"/>
+                                    <constraint firstItem="4oa-WY-Ni7" firstAttribute="leading" secondItem="xiY-KA-Ii1" secondAttribute="leading" constant="16" id="VaI-DC-ayu"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Bq-S2-AsD" secondAttribute="trailing" constant="16" id="fut-Z3-vSi"/>
+                                    <constraint firstItem="4oa-WY-Ni7" firstAttribute="top" secondItem="f91-mD-51Y" secondAttribute="bottom" constant="8" id="rbI-Xb-CN3"/>
+                                    <constraint firstItem="3Bq-S2-AsD" firstAttribute="top" secondItem="4oa-WY-Ni7" secondAttribute="bottom" constant="8" id="sxg-ox-mzh"/>
+                                </constraints>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbq-Uw-G5Y">
+                                <rect key="frame" x="16" y="671.33333333333337" width="382" height="150.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf5-oH-aao">
+                                        <rect key="frame" x="163.66666666666666" y="8" width="55" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="aB0-CE-qC6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view shows a skeleton with an axial vertical animated gradient from center." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-yU-93Z">
+                                        <rect key="frame" x="16" y="38.000000000000007" width="350" height="72.666666666666686"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d02-35-Yfk">
+                                        <rect key="frame" x="16" y="118.66666666666663" width="350" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="ujw-F4-pE8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Add skeleton "/>
+                                        <connections>
+                                            <action selector="showSkeletonOnView5:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hqz-rF-Tjy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sf5-oH-aao" firstAttribute="top" secondItem="Mbq-Uw-G5Y" secondAttribute="top" constant="8" id="4do-Vd-f7U"/>
+                                    <constraint firstItem="d02-35-Yfk" firstAttribute="centerX" secondItem="Mbq-Uw-G5Y" secondAttribute="centerX" id="EZ3-Ig-067"/>
+                                    <constraint firstItem="d02-35-Yfk" firstAttribute="leading" secondItem="Mbq-Uw-G5Y" secondAttribute="leading" constant="16" id="OLN-FQ-a4S"/>
+                                    <constraint firstItem="sf5-oH-aao" firstAttribute="centerX" secondItem="Mbq-Uw-G5Y" secondAttribute="centerX" id="cP0-Qw-GF4"/>
+                                    <constraint firstAttribute="trailing" secondItem="d02-35-Yfk" secondAttribute="trailing" constant="16" id="mr4-Je-XzS"/>
+                                    <constraint firstItem="eaL-yU-93Z" firstAttribute="top" secondItem="sf5-oH-aao" secondAttribute="bottom" constant="8" id="nbM-GT-l3C"/>
+                                    <constraint firstAttribute="trailing" secondItem="eaL-yU-93Z" secondAttribute="trailing" constant="16" id="sqJ-oS-26G"/>
+                                    <constraint firstItem="d02-35-Yfk" firstAttribute="top" secondItem="eaL-yU-93Z" secondAttribute="bottom" constant="8" id="ukh-0D-b6z"/>
+                                    <constraint firstAttribute="bottom" secondItem="d02-35-Yfk" secondAttribute="bottom" constant="8" id="uo2-8Z-MsP"/>
+                                    <constraint firstItem="eaL-yU-93Z" firstAttribute="leading" secondItem="Mbq-Uw-G5Y" secondAttribute="leading" constant="16" id="xa2-Ga-u68"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOY-0g-sgm">
+                                <rect key="frame" x="16" y="830" width="382" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-AQ-0rC">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Add skeleton over full screen with radial animation from center"/>
+                                        <connections>
+                                            <action selector="showSkeletonOverFullScreen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rO3-nH-xH3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MtU-AQ-0rC" firstAttribute="leading" secondItem="iOY-0g-sgm" secondAttribute="leading" id="Jqm-dZ-J8S"/>
+                                    <constraint firstAttribute="trailing" secondItem="MtU-AQ-0rC" secondAttribute="trailing" id="PzT-KI-wBm"/>
+                                    <constraint firstAttribute="height" constant="24" id="WSM-gr-zBc"/>
+                                    <constraint firstItem="MtU-AQ-0rC" firstAttribute="top" secondItem="iOY-0g-sgm" secondAttribute="top" id="e35-2V-N8G"/>
+                                    <constraint firstAttribute="bottom" secondItem="MtU-AQ-0rC" secondAttribute="bottom" id="v5j-S2-hMl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mbq-Uw-G5Y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="2dM-6B-mge"/>
+                            <constraint firstItem="xiY-KA-Ii1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="5Cr-21-3nP"/>
+                            <constraint firstItem="aBt-cT-Mam" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="74H-zg-ZEB"/>
+                            <constraint firstItem="iOY-0g-sgm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="B4V-5Y-ovG"/>
+                            <constraint firstItem="7Mm-ZX-Lkg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Cpf-2c-wi5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iOY-0g-sgm" secondAttribute="bottom" constant="8" id="Dz7-gN-xta"/>
+                            <constraint firstItem="7Mm-ZX-Lkg" firstAttribute="height" secondItem="gyL-cg-gai" secondAttribute="height" id="HrM-NJ-PKt"/>
+                            <constraint firstItem="gyL-cg-gai" firstAttribute="top" secondItem="aBt-cT-Mam" secondAttribute="bottom" constant="4" id="MsU-Jy-2ZW"/>
+                            <constraint firstItem="Mbq-Uw-G5Y" firstAttribute="height" secondItem="xiY-KA-Ii1" secondAttribute="height" id="O5G-f5-bZb"/>
+                            <constraint firstItem="xiY-KA-Ii1" firstAttribute="height" secondItem="7Mm-ZX-Lkg" secondAttribute="height" id="XLZ-op-qR5"/>
+                            <constraint firstItem="xiY-KA-Ii1" firstAttribute="top" secondItem="7Mm-ZX-Lkg" secondAttribute="bottom" constant="4" id="YNZ-gp-1qw"/>
+                            <constraint firstAttribute="trailing" secondItem="xiY-KA-Ii1" secondAttribute="trailing" constant="16" id="d0L-zr-4DJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Mbq-Uw-G5Y" secondAttribute="trailing" constant="16" id="diM-la-o1l"/>
+                            <constraint firstItem="iOY-0g-sgm" firstAttribute="top" secondItem="Mbq-Uw-G5Y" secondAttribute="bottom" constant="8" id="hGa-hP-xJ9"/>
+                            <constraint firstItem="gyL-cg-gai" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="ki8-bM-PPr"/>
+                            <constraint firstAttribute="trailing" secondItem="iOY-0g-sgm" secondAttribute="trailing" constant="16" id="kss-4o-u33"/>
+                            <constraint firstItem="gyL-cg-gai" firstAttribute="height" secondItem="aBt-cT-Mam" secondAttribute="height" id="lAe-Ts-0Dm"/>
+                            <constraint firstAttribute="trailing" secondItem="aBt-cT-Mam" secondAttribute="trailing" constant="16" id="nKe-VZ-p5T"/>
+                            <constraint firstItem="Mbq-Uw-G5Y" firstAttribute="top" secondItem="xiY-KA-Ii1" secondAttribute="bottom" constant="4" id="qve-aY-2Ye"/>
+                            <constraint firstAttribute="trailing" secondItem="7Mm-ZX-Lkg" secondAttribute="trailing" constant="16" id="rtz-xk-ius"/>
+                            <constraint firstItem="aBt-cT-Mam" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="xPS-PT-Oi4"/>
+                            <constraint firstAttribute="trailing" secondItem="gyL-cg-gai" secondAttribute="trailing" constant="16" id="xhV-wA-Exr"/>
+                            <constraint firstItem="7Mm-ZX-Lkg" firstAttribute="top" secondItem="gyL-cg-gai" secondAttribute="bottom" constant="4" id="yr8-8q-b5k"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="26.116071428571427"/>
         </scene>
     </scenes>
 </document>

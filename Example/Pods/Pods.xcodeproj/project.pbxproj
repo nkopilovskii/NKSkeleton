@@ -8,9 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		151C71202865F45E052F07E474B1017B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		1B214477216603E300C8DF20 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21446F216603E300C8DF20 /* CGPoint.swift */; };
+		1B214478216603E300C8DF20 /* CABasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214470216603E300C8DF20 /* CABasicAnimation.swift */; };
+		1B214479216603E300C8DF20 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214471216603E300C8DF20 /* CGRect.swift */; };
+		1B21447A216603E300C8DF20 /* CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214472216603E300C8DF20 /* CAGradientLayer.swift */; };
+		1B21447B216603E300C8DF20 /* Array<NSNumber>.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214473216603E300C8DF20 /* Array<NSNumber>.swift */; };
+		1B21447C216603E300C8DF20 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214474216603E300C8DF20 /* UIView.swift */; };
+		1B21447D216603E300C8DF20 /* CAGradientLayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214475216603E300C8DF20 /* CAGradientLayerType.swift */; };
+		1B21447E216603E300C8DF20 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214476216603E300C8DF20 /* CALayer.swift */; };
+		1B214481216603EB00C8DF20 /* NKSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21447F216603EB00C8DF20 /* NKSkeleton.swift */; };
+		1B214482216603EB00C8DF20 /* NKSkeletonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B214480216603EB00C8DF20 /* NKSkeletonConfiguration.swift */; };
 		2E3DBFFC02F0030925DD4C7103504493 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		3D9C829B40A525EC320DC47CE7757218 /* Pods-NKSkeleton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237921D6B45A494F5475749AFA7528C /* Pods-NKSkeleton_Tests-dummy.m */; };
-		4F32DB572E7D2A38400E219FB8930EB0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74EDD6BDA1F9C9230BB06264D5A89D /* ReplaceMe.swift */; };
 		68EA77DFA957EDE49570D8F1064D8489 /* NKSkeleton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 699C80E865FF3F7C78B41CCE7D314FF6 /* NKSkeleton-dummy.m */; };
 		728972197BC84D0EE66ED411A091B83B /* Pods-NKSkeleton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9FA468EC7BFD151643AED229AA6D00 /* Pods-NKSkeleton_Example-dummy.m */; };
 		7917950D7C1E8A42FC4F8356989C0A6C /* Pods-NKSkeleton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D1AF5E653A714A23BF2915173F529F /* Pods-NKSkeleton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,32 +49,41 @@
 		01A445E3946D8DEF1C2FC932720C894D /* Pods-NKSkeleton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKSkeleton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		101264102CC292B1B73DEABAB91FC4C2 /* NKSkeleton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKSkeleton.modulemap; sourceTree = "<group>"; };
 		17C8788F76425BDE8ECCC0FCF814F86F /* Pods-NKSkeleton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKSkeleton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1B21446F216603E300C8DF20 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGPoint.swift; path = ../Extensions/CGPoint.swift; sourceTree = "<group>"; };
+		1B214470216603E300C8DF20 /* CABasicAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CABasicAnimation.swift; path = ../Extensions/CABasicAnimation.swift; sourceTree = "<group>"; };
+		1B214471216603E300C8DF20 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGRect.swift; path = ../Extensions/CGRect.swift; sourceTree = "<group>"; };
+		1B214472216603E300C8DF20 /* CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAGradientLayer.swift; path = ../Extensions/CAGradientLayer.swift; sourceTree = "<group>"; };
+		1B214473216603E300C8DF20 /* Array<NSNumber>.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array<NSNumber>.swift"; path = "../Extensions/Array<NSNumber>.swift"; sourceTree = "<group>"; };
+		1B214474216603E300C8DF20 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = ../Extensions/UIView.swift; sourceTree = "<group>"; };
+		1B214475216603E300C8DF20 /* CAGradientLayerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAGradientLayerType.swift; path = ../Extensions/CAGradientLayerType.swift; sourceTree = "<group>"; };
+		1B214476216603E300C8DF20 /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CALayer.swift; path = ../Extensions/CALayer.swift; sourceTree = "<group>"; };
+		1B21447F216603EB00C8DF20 /* NKSkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKSkeleton.swift; sourceTree = "<group>"; };
+		1B214480216603EB00C8DF20 /* NKSkeletonConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKSkeletonConfiguration.swift; sourceTree = "<group>"; };
 		22B880072F23FA0CDC3B16A11D7F58DF /* Pods-NKSkeleton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NKSkeleton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		47308146DDA88C49AC1E22E9F646C69D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		47308146DDA88C49AC1E22E9F646C69D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4884BA7E954F50FEFDD66DFA20E3C9A3 /* Pods-NKSkeleton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSkeleton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		669CE2C5A7AED234222B2CAF2A0C12FE /* Pods-NKSkeleton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NKSkeleton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		699C80E865FF3F7C78B41CCE7D314FF6 /* NKSkeleton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKSkeleton-dummy.m"; sourceTree = "<group>"; };
 		7237921D6B45A494F5475749AFA7528C /* Pods-NKSkeleton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NKSkeleton_Tests-dummy.m"; sourceTree = "<group>"; };
-		73699D3C850CF0C811563D2861067EE9 /* NKSkeleton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NKSkeleton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		73699D3C850CF0C811563D2861067EE9 /* NKSkeleton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = NKSkeleton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		802A5965A5E1C212BBA096EF943D403E /* Pods-NKSkeleton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NKSkeleton_Example.modulemap"; sourceTree = "<group>"; };
 		80D1AF5E653A714A23BF2915173F529F /* Pods-NKSkeleton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NKSkeleton_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8E5B4B854BD065137C827E3B58E574D4 /* Pods-NKSkeleton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKSkeleton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		912AA22D903940F27A0531011537B46A /* NKSkeleton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKSkeleton-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96AC923CAC417BAE79807F7FCFDF9D27 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96AC923CAC417BAE79807F7FCFDF9D27 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9C7F123BA1C7BACC929DE96B103364DC /* Pods-NKSkeleton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKSkeleton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D9962915920AE2FD0493A620180F5D5 /* Pods-NKSkeleton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSkeleton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B6416BD2270968A276AC0FA5718F3F22 /* Pods-NKSkeleton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NKSkeleton_Example-umbrella.h"; sourceTree = "<group>"; };
 		B6D09FBD29F3E5E56C87ADD035948F99 /* NKSkeleton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NKSkeleton-Info.plist"; sourceTree = "<group>"; };
-		B93A5F2950547AF983B52643C6E6E1CD /* Pods_NKSkeleton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NKSkeleton_Example.framework; path = "Pods-NKSkeleton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93A5F2950547AF983B52643C6E6E1CD /* Pods_NKSkeleton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKSkeleton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7DD777B9947D06471E52F3C118C5CE /* NKSkeleton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKSkeleton.xcconfig; sourceTree = "<group>"; };
-		BF74EDD6BDA1F9C9230BB06264D5A89D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = NKSkeleton/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		D0A5424CBCF277D95F01E115B2CFA409 /* NKSkeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKSkeleton.framework; path = NKSkeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A5424CBCF277D95F01E115B2CFA409 /* NKSkeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKSkeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28A1B0B6F99C26679B6EF3252BB115E /* Pods-NKSkeleton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSkeleton_Example-Info.plist"; sourceTree = "<group>"; };
 		D4BB9F4CE2FDDE71638488643FACE063 /* Pods-NKSkeleton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NKSkeleton_Tests.modulemap"; sourceTree = "<group>"; };
 		D90ED4BCDC19F3EA0B96F59DFB2728BC /* Pods-NKSkeleton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSkeleton_Tests-Info.plist"; sourceTree = "<group>"; };
-		DD869FAAC8C5EC266C2F4165CE5B8148 /* Pods_NKSkeleton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NKSkeleton_Tests.framework; path = "Pods-NKSkeleton_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD869FAAC8C5EC266C2F4165CE5B8148 /* Pods_NKSkeleton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKSkeleton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06A07A7B96BCCF1C8678DB242D4F35F /* Pods-NKSkeleton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NKSkeleton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F2BBE5DBC4AE1C41CD8DE75B7DAF7D07 /* NKSkeleton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKSkeleton-umbrella.h"; sourceTree = "<group>"; };
 		FB9FA468EC7BFD151643AED229AA6D00 /* Pods-NKSkeleton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NKSkeleton_Example-dummy.m"; sourceTree = "<group>"; };
@@ -99,6 +117,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B21446D2166038F00C8DF20 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B21447F216603EB00C8DF20 /* NKSkeleton.swift */,
+				1B214480216603EB00C8DF20 /* NKSkeletonConfiguration.swift */,
+				1B21446E216603BF00C8DF20 /* Extensions */,
+			);
+			name = Classes;
+			path = NKSkeleton/Classes;
+			sourceTree = "<group>";
+		};
+		1B21446E216603BF00C8DF20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B214473216603E300C8DF20 /* Array<NSNumber>.swift */,
+				1B214470216603E300C8DF20 /* CABasicAnimation.swift */,
+				1B214472216603E300C8DF20 /* CAGradientLayer.swift */,
+				1B214475216603E300C8DF20 /* CAGradientLayerType.swift */,
+				1B214476216603E300C8DF20 /* CALayer.swift */,
+				1B21446F216603E300C8DF20 /* CGPoint.swift */,
+				1B214471216603E300C8DF20 /* CGRect.swift */,
+				1B214474216603E300C8DF20 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		50265EF7B51A4E28436BC6A56C8C47E7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +226,7 @@
 		DE725618D2445A5E3E3265A57D7F4588 /* NKSkeleton */ = {
 			isa = PBXGroup;
 			children = (
-				BF74EDD6BDA1F9C9230BB06264D5A89D /* ReplaceMe.swift */,
+				1B21446D2166038F00C8DF20 /* Classes */,
 				D9F5E1117665647B032834FFE4C0248C /* Pod */,
 				E8A8284189E0EDAB1488BB8E84C4AA51 /* Support Files */,
 			);
@@ -315,6 +359,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					E787A9FAF33124753084C6969A2F361D = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -372,8 +421,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B214477216603E300C8DF20 /* CGPoint.swift in Sources */,
+				1B214481216603EB00C8DF20 /* NKSkeleton.swift in Sources */,
+				1B214482216603EB00C8DF20 /* NKSkeletonConfiguration.swift in Sources */,
+				1B21447A216603E300C8DF20 /* CAGradientLayer.swift in Sources */,
+				1B214478216603E300C8DF20 /* CABasicAnimation.swift in Sources */,
+				1B21447C216603E300C8DF20 /* UIView.swift in Sources */,
 				68EA77DFA957EDE49570D8F1064D8489 /* NKSkeleton-dummy.m in Sources */,
-				4F32DB572E7D2A38400E219FB8930EB0 /* ReplaceMe.swift in Sources */,
+				1B21447D216603E300C8DF20 /* CAGradientLayerType.swift in Sources */,
+				1B21447E216603E300C8DF20 /* CALayer.swift in Sources */,
+				1B214479216603E300C8DF20 /* CGRect.swift in Sources */,
+				1B21447B216603E300C8DF20 /* Array<NSNumber>.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC7DD777B9947D06471E52F3C118C5CE /* NKSkeleton.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -629,6 +688,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC7DD777B9947D06471E52F3C118C5CE /* NKSkeleton.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -649,8 +709,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -721,8 +780,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
