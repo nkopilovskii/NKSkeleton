@@ -9,34 +9,24 @@
 Pod::Spec.new do |s|
   s.name             = 'NKSkeleton'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NKSkeleton.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Visual component for hiding subviews for the period of loading content'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  This module allows you to impose a mask on the display for the period of loading content.
+  Advanced features allow you to set the level of subview relative to the parent view (to which the module is applied), colors, type and animation of the gradient, with the ability to control the speed of its running.
+  
+  This module provides a simple implementation of a variety of design solutions for visual components with loadable content.
                        DESC
 
   s.homepage         = 'https://github.com/nkopilovskii/NKSkeleton'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nkopilovskii' => 'nikolay.k@powercode.us' }
+  s.author           = { 'nkopilovskii' => 'nkopilovskii@gmail.com' }
   s.source           = { :git => 'https://github.com/nkopilovskii/NKSkeleton.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/MKopilovskii'
 
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '10.0'
+s.swift_version  = '4.2'
   s.source_files = 'NKSkeleton/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'NKSkeleton' => ['NKSkeleton/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
