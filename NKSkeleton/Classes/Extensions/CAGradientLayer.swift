@@ -33,7 +33,7 @@ extension CAGradientLayer {
 //      print("The use of the gradient type '.radial' is not possible in the case of using the library installed through CocoaPods. For using advanced settings, install, follow the instructions in the developer repository https://github.com/nkopilovskii/NKSkeleton.")
 //    }
     
-    gradient.type = CAGradientLayerType.type(for: configuration.type, initialPosition: configuration.initialPosition)
+    gradient.type = CAGradientLayerType(rawValue: CAGradientLayerType.type(for: configuration.type, initialPosition: configuration.initialPosition))
     
     return gradient
   }
