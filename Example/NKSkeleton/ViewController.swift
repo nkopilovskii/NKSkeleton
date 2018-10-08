@@ -13,13 +13,19 @@ class ViewController: UIViewController {
   
   
   
-  let colors = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.cyan.cgColor, UIColor.blue.cgColor, UIColor.magenta.cgColor]
+//  let colors = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.cyan.cgColor, UIColor.blue.cgColor, UIColor.magenta.cgColor]
+  let colors = [UIColor.lightGray.cgColor, UIColor.white.cgColor, UIColor.lightGray.cgColor, UIColor.white.cgColor]
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    let deadlineTime = DispatchTime.now() + .seconds(5)
+    let deadlineTime = DispatchTime.now() + .seconds(4)
     DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+//      self.showSkeletonOnView1(self)
+//      self.showSkeletonOnView2(self)
+//      self.showSkeletonOnView3(self)
+//      self.showSkeletonOnView4(self)
+//      self.showSkeletonOnView5(self)
       self.showSkeletonOverFullScreen(self)
     }
   }
@@ -31,7 +37,7 @@ class ViewController: UIViewController {
     config.colors = colors
     config.type = .axial
     config.initialPosition = .left
-    config.speed = 1
+    config.duration = 1
     config.subviewsLevel = 1
     
     let skeleton = NKSkeleton(configuration: config)
@@ -51,7 +57,7 @@ class ViewController: UIViewController {
     config.colors = colors
     config.type = .axial
     config.initialPosition = .bottom
-    config.speed = 1
+    config.duration  = 1
     config.subviewsLevel = 1
     
     let skeleton = NKSkeleton(configuration: config)
@@ -71,7 +77,7 @@ class ViewController: UIViewController {
     config.colors = colors
     config.type = .axial
     config.initialPosition = .topRight
-    config.speed = 1
+    config.duration  = 1
     config.subviewsLevel = 1
     
     let skeleton = NKSkeleton(configuration: config)
@@ -91,7 +97,7 @@ class ViewController: UIViewController {
     config.colors = colors
     config.type = .radial(false)
     config.initialPosition = .bottomRight
-    config.speed = 1
+    config.duration  = 1
     config.subviewsLevel = 1
     
     let skeleton = NKSkeleton(configuration: config)
@@ -111,7 +117,7 @@ class ViewController: UIViewController {
     config.colors = colors
     config.type = .axial
     config.initialPosition = .center
-    config.speed = 1
+    config.duration  = 1
     config.subviewsLevel = 1
     
     let skeleton = NKSkeleton(configuration: config)
@@ -129,10 +135,10 @@ class ViewController: UIViewController {
     var config = NKSkeletonConfiguration()
     config.isAnimatable = true
     config.colors = colors
-    config.type = .radial(true)
-    config.initialPosition = .center
-    config.speed = 1
-    config.subviewsLevel = 2
+    config.type = .axial
+    config.initialPosition = .topLeft
+    config.duration  = 4
+    config.subviewsLevel = 1
     
     let skeleton = NKSkeleton(configuration: config)
     skeleton.show(on: view)

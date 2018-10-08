@@ -16,7 +16,7 @@ extension CABasicAnimation {
     animation.fromValue = locations
     animation.toValue = locations.map { NSNumber(value: $0.doubleValue + (1 + delta) * (config.type.radialDirection ? 1 : -1)) }
 
-    animation.duration = config.speed
+    animation.duration = config.duration
     animation.repeatCount = .infinity
     
     return animation

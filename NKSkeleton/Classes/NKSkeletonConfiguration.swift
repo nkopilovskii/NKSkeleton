@@ -22,7 +22,7 @@ public struct NKSkeletonConfiguration {
   public var initialPosition: NKInitialPosition = .topLeft
   
   /// The duration of one pass animation
-  public var speed: CFTimeInterval = 0
+  public var duration: CFTimeInterval = 0
   
   /// The level of subviews to be hidden by the skeleton, relative to the parent view
   public var subviewsLevel = 0

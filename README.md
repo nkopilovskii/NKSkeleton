@@ -3,7 +3,7 @@
 ![Swift](https://img.shields.io/badge/Swift-4.2-red.svg)  [![Version](https://img.shields.io/cocoapods/v/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton) [![License](https://img.shields.io/cocoapods/l/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton) [![Platform](https://img.shields.io/cocoapods/p/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton)
 
 
-![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/NKSkeleton_Example.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/NKSkeleton_Example_FullScreen.gif?raw=true) 
+![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/full_screen_rainbow.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/full_screen_grey.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/different_views.gif?raw=true) 
 
 
 ## Crytical issue
@@ -46,7 +46,7 @@ public struct NKSkeletonConfiguration {
   public var initialPosition: NKInitialPosition = .topLeft
 
   /// The duration of one pass animation
-  public var speed: CFTimeInterval = 0
+  public var duration: CFTimeInterval = 0
 
   /// The level of subviews to be hidden by the skeleton, relative to the parent view
   public var subviewsLevel = 0
