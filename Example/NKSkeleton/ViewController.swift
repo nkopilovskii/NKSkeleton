@@ -20,11 +20,7 @@ class ViewController: UIViewController {
     
     let deadlineTime = DispatchTime.now() + .seconds(5)
     DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-      self.showSkeletonOnView1(self)
-      self.showSkeletonOnView2(self)
-      self.showSkeletonOnView3(self)
-      self.showSkeletonOnView4(self)
-      self.showSkeletonOnView5(self)
+      self.showSkeletonOverFullScreen(self)
     }
   }
   

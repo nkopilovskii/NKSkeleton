@@ -2,6 +2,10 @@
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-red.svg)  [![Version](https://img.shields.io/cocoapods/v/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton) [![License](https://img.shields.io/cocoapods/l/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton) [![Platform](https://img.shields.io/cocoapods/p/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton)
 
+
+![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/NKSkeleton_Example.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/NKSkeleton_Example_FullScreen.gif?raw=true) 
+
+
 ## Crytical issue
 
 ## Interface
@@ -115,9 +119,7 @@ public extension NKSkeletonConfiguration {
 
 ```
 
-## Screenshots
 
-![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/NKSkeleton_Example.gif?raw=true) 
 
 
 ## Example
