@@ -6,7 +6,8 @@
 ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/full_screen_rainbow.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/full_screen_grey.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/different_views.gif?raw=true) 
 
 
-## Crytical issue
+
+
 
 ## Interface
 
@@ -121,6 +122,61 @@ public extension NKSkeletonConfiguration {
 
 
 
+## Critical issue
+In the process of developing and uploading a library to CocoaPods, there was a serious problem.
+
+For the implementation of the radial gradient, the class `CAGradientLayer` has a parameter 
+```swift
+open var type: CAGradientLayerType
+```
+
+which can take the values specified in the `CAGradientLayerType` extension
+```swift
+extension CAGradientLayerType {
+
+
+/** `type' values. **/
+@available(iOS 3.0, *)
+public static let axial: CAGradientLayerType
+
+
+/* Radial gradient. The gradient is defined as an ellipse with its
+* center at 'startPoint' and its width and height defined by
+* '(endPoint.x - startPoint.x) * 2' and '(endPoint.y - startPoint.y) *
+* 2' respectively. */
+
+@available(iOS 3.2, *)
+public static let radial: CAGradientLayerType
+
+
+/* Conic gradient. The gradient is centered at 'startPoint' and its 0-degrees
+* direction is defined by a vector spanned between 'startPoint' and
+* 'endPoint'. When 'startPoint' and 'endPoint' overlap the results are
+* undefined. The gradient's angle increases in the direction of rotation of
+* positive x-axis towards positive y-axis. */
+
+@available(iOS 12.0, *)
+public static let conic: CAGradientLayerType
+}
+```
+
+At the same time, when changing the value of `type` parameter, the **Xcode** requires the use of the `String` value
+
+![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/xcode_issue.png?raw=true)
+
+That is, **Xcode** allows string values (`"axial"`, `"radial"`, `"conic"`) for the parameter's `type` value
+```swift
+gradient.type = "radial"
+```
+
+However in this way, when loading a library to CocoaPods, the following problem occurs:
+
+![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/cocoapods_issue.png?raw=true)
+
+For this reason, the library loaded to CocoaPods only supports work with linear gradients.
+
+To use the library with full functionality, follow the instructions in the **"Installation"**
+
 
 ## Example
 
@@ -141,7 +197,6 @@ For using advanced settings add the following line to your Podfile:
 ```ruby
 pod 'NKSkeleton', :git => 'https://github.com/nkopilovskii/NKSkeleton.git', :branch => 'advanced'
 ```
-
 
 ## Author
 
