@@ -7,14 +7,14 @@ import UIKit
 
 extension CALayer {
   
-  private static let kNKAddLayerOpacityAnimation = "kNKAddLayerOpacityAnimation"
-  private static let kNKRemoveLayerOpacityAnimation = "kNKRemoveLayerOpacityAnimation"
+  fileprivate static let kNKAddLayerOpacityAnimation = "kNKAddLayerOpacityAnimation"
+  fileprivate static let kNKRemoveLayerOpacityAnimation = "kNKRemoveLayerOpacityAnimation"
   
   func addWithOpacityAnimation(_ layer: CALayer) {
     layer.opacity = 1
     addSublayer(layer)
     
-    let animation = CABasicAnimation.opacityAnimation(true)//(keyPath: "opacity")
+    let animation = CABasicAnimation.opacityAnimation(true)
     layer.add(animation, forKey: CALayer.kNKAddLayerOpacityAnimation)
   }
   

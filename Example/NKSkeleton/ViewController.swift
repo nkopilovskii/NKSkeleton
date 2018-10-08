@@ -15,6 +15,18 @@ class ViewController: UIViewController {
   
   let colors = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.cyan.cgColor, UIColor.blue.cgColor, UIColor.magenta.cgColor]
   
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    let deadlineTime = DispatchTime.now() + .seconds(5)
+    DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+      self.showSkeletonOnView1(self)
+      self.showSkeletonOnView2(self)
+      self.showSkeletonOnView3(self)
+      self.showSkeletonOnView4(self)
+      self.showSkeletonOnView5(self)
+    }
+  }
   
   @IBAction func showSkeletonOnView1(_ sender: Any) {
     

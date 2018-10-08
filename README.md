@@ -2,6 +2,7 @@
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-red.svg)  [![Version](https://img.shields.io/cocoapods/v/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton) [![License](https://img.shields.io/cocoapods/l/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton) [![Platform](https://img.shields.io/cocoapods/p/NKSkeleton?style=flat)](https://cocoapods.org/pods/NKSkeleton)
 
+## Crytical issue
 
 ## Interface
 
@@ -9,15 +10,12 @@
 ```swift
 public class NKSkeleton {
 
-
-
-public init(configuration: NKSkeletonConfiguration, sourceView: UIView? = nil) 
+  public init(configuration: NKSkeletonConfiguration, sourceView: UIView? = nil) 
 
   /**
     Show skeleton on `sourceView`
   */
   public func show(on sourceView: UIView? = nil) 
-
 
   /**
     Hide skeleton on `sourceView`
@@ -49,7 +47,7 @@ public struct NKSkeletonConfiguration {
   /// The level of subviews to be hidden by the skeleton, relative to the parent view
   public var subviewsLevel = 0
 
-  public init() { }
+  public init()
 
 }
 
@@ -85,31 +83,31 @@ public extension NKSkeletonConfiguration {
   */
   public enum NKInitialPosition {
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from left side to right side
+    /// <if `NKSkeletonConfiguration().type = .axial'> from left side to right side
     case left
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from right side to left side
+    /// <if `NKSkeletonConfiguration().type = .axial'> from right side to left side
     case right
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from top side to bottom side
+    /// <if `NKSkeletonConfiguration().type = .axial'> from top side to bottom side
     case top
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from bottom side to top side
+    /// <if `NKSkeletonConfiguration().type = .axial'> from bottom side to top side
     case bottom
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from top left corner to bottom right corner
+    /// <if `NKSkeletonConfiguration().type = .axial'> from top left corner to bottom right corner
     case topLeft
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from top right corner to bottom left corner
+    /// <if `NKSkeletonConfiguration().type = .axial'> from top right corner to bottom left corner
     case topRight
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from bottom left corner to top right corner
+    /// <if `NKSkeletonConfiguration().type = .axial'> from bottom left corner to top right corner
     case bottomLeft
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from bottom right corner to top left corner
+    /// <if `NKSkeletonConfiguration().type = .axial'> from bottom right corner to top left corner
     case bottomRight
 
-    /// *if `NKSkeletonConfiguration().type = .axial'* from center to left and right sides
+    /// <if `NKSkeletonConfiguration().type = .axial'> from center to left and right sides
     case center
   }
 
@@ -131,6 +129,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'NKSkeleton'
 ```
+For using advanced settings add the following line to your Podfile:
+
+```ruby
+pod 'NKSkeleton', :git => 'https://github.com/nkopilovskii/NKSkeleton.git', :branch => 'advanced'
+```
+
 
 ## Author
 
