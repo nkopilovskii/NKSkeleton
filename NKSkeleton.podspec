@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
   s.swift_version  = '4.2'
-  #s.source_files = 'NKSkeleton/Classes/**/*'
-  s.source_files = 'NKSkeleton/**'
+  s.source_files = 'NKSkeleton/Classes/Extensions/*', 'NKSkeleton/Classes/*'
   
 end
