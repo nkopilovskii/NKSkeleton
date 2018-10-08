@@ -115,6 +115,11 @@ public extension NKSkeletonConfiguration {
 
 ```
 
+## Screenshots
+
+![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/NKSkeleton_Example.gif?raw=true) 
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
