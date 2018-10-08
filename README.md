@@ -6,9 +6,6 @@
 ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/full_screen_rainbow.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/full_screen_grey.gif?raw=true) ![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/different_views.gif?raw=true) 
 
 
-
-
-
 ## Interface
 
 ### NKSkeleton
@@ -120,7 +117,8 @@ public extension NKSkeletonConfiguration {
 
 ```
 
-
+The following image shows the principle of determining the subview level relative to the main view (`self.view`) of the view controller.
+![image](https://github.com/nkopilovskii/NKSkeleton/blob/master/Screenshots/levels.png?raw=true)
 
 ## Critical issue
 In the process of developing and uploading a library to CocoaPods, there was a serious problem.
