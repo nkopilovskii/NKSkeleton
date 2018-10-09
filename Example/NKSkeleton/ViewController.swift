@@ -13,21 +13,21 @@ class ViewController: UIViewController {
   
   
   
-//  let colors = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.cyan.cgColor, UIColor.blue.cgColor, UIColor.magenta.cgColor]
-  let colors = [UIColor.lightGray.cgColor, UIColor.white.cgColor, UIColor.lightGray.cgColor, UIColor.white.cgColor]
+  let colors = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor, UIColor.cyan.cgColor, UIColor.blue.cgColor, UIColor.magenta.cgColor]
+//  let colors = [UIColor.lightGray.cgColor, UIColor.white.cgColor, UIColor.lightGray.cgColor, UIColor.white.cgColor]
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
-    let deadlineTime = DispatchTime.now() + .seconds(4)
-    DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+//    let deadlineTime = DispatchTime.now() + .seconds(4)
+//    DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
 //      self.showSkeletonOnView1(self)
 //      self.showSkeletonOnView2(self)
 //      self.showSkeletonOnView3(self)
 //      self.showSkeletonOnView4(self)
 //      self.showSkeletonOnView5(self)
-      self.showSkeletonOverFullScreen(self)
-    }
+//      self.showSkeletonOverFullScreen(self)
+//    }
   }
   
   @IBAction func showSkeletonOnView1(_ sender: Any) {
